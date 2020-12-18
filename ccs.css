@@ -1,4 +1,128 @@
+body{
+    padding: 0px;
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:antialiased;
+
+}
+.center
 {
+    margin: 0px auto;
+}
+
+h1{
+    color: black;
+    text-align: center;
+}
+
+/* STRUCTURE */
+
+#pagewrap {
+	padding: 5px;
+	width: 100%;
+	margin: 5px auto;
+}
+
+#content {
+	width: 28%;
+	float: left;
+    padding: 5px 15px;
+    border: 2px solid black;
+    background-color: #24b4be;
+}
+
+#middle {
+	width: 28%;
+	float: left;
+	padding: 5px 15px;
+    margin: 0px 5px 5px 5px;
+    border: 2px solid black;
+    background-color: #2a33af;
+}
+
+#sidebar {
+	width: 28%;
+	padding: 5px 15px;
+    float: left;
+    border: 2px solid black;
+    background-color: #0b29b3;
+}
+#content #second{
+    border: 2px solid black;
+    width: 20%;
+    position: relative;
+    left:82.4%; 
+    top: -7px;
+    background: rgb(47, 180, 7);
+    text-align: center;
+}
+#middle #second{
+    color: blanchedalmond;
+    border: 2px solid black;
+    width: 20%;
+    position: relative;
+    left:82.4%; 
+    top: -7px;
+    background: tomato;
+    text-align: center;
+}
+#sidebar #second{
+    border: 2px solid black;
+    width: 20%;
+    position: relative;
+    left:82.4%; 
+    top: -7px;
+    background: #08c211;
+    text-align: center;
+}
+
+@media screen and (max-width: 991px) {
+	
+	#pagewrap {
+		width: 100%;
+	}
+	#content {
+		width: 41%;
+		padding: 1% 4%;
+	}
+	#middle {
+		width: 41%;
+		padding: 1% 4%;
+		margin: 0px 0px 5px 5px;
+		float: right;
+	}
+	
+	#sidebar {
+		clear: both;
+		padding: 1% 4%;
+		width: auto;
+		float: none;
+	}
+
+	
+}
+
+@media screen and (max-width: 767px) {
+
+	#content {
+		width: auto;
+        float: none;
+        
+	}
+	
+	#middle {
+		width: auto;
+		float: none;
+		margin-top: 4px;
+	}
+	
+	#sidebar {
+		width: auto;
+		float: none;
+	}
+
+
+* {
     box-sizing: border-box;
 }
 .row{
@@ -11,8 +135,6 @@
     border: 1px solid black;
     color: white;
     font-size: 20px;
-    width: 40%;
-    text-align: center;
     padding: 5px 20px 5px 20px;
 }
 p{
@@ -21,13 +143,13 @@ p{
     padding: 5px;
 }
 .bg-red{
-    background-color: red;
+    background-color: rgb(0, 255, 34);
 }
 .bg-green{
-    background-color:green;
+    background-color:rgb(58, 128, 0);
 }
 .bg-yellow{
-    background-color: yellow;    
+    background-color: rgb(102, 255, 0);    
     color: black;
 }
 h1{
@@ -75,25 +197,25 @@ h1{
        width:100%;
    }
    .container{
-        border: 2px solid red;
+        border: 2px solid rgb(0, 140, 255);
         margin:15px;
         box-sizing: border-box;
         color: white;
    }
    .lg-bg-purple{
-        background-color: purple;
+        background-color: rgb(9, 131, 29);
         color: white;
     }
     .lg-bg-pink{
-        background-color:pink;
+        background-color:rgb(192, 204, 255);
         color:black;
     }
     .lg-bg-orange{
-        background-color: orange;    
+        background-color: rgb(0, 255, 170);    
         color: black;
     }
     .lg-bg-grey{
-        background-color: grey;
+        background-color: rgb(128, 128, 128);
     }
 }
 /*Medium devices*/
@@ -144,15 +266,15 @@ h1{
         margin: 15px;
    }
    .md-bg-red{
-        background-color: red;
+        background-color: rgb(0, 255, 157);
         color: white;
     }
     .md-bg-green{
-        background-color:green;
+        background-color:rgb(0, 66, 128);
         color:white;
     }
     .md-bg-yellow{
-        background-color: yellow;    
+        background-color: rgb(162, 0, 255);    
         color: black;
     }
    .md-bg-grey{
@@ -201,20 +323,20 @@ h1{
         width:100%;
     }
     .container{
-        border: 2px solid blue;
+        border: 2px solid rgb(0, 174, 255);
         margin:15px;
         box-sizing: border-box;
    }
    .sm-bg-red{
-        background-color: red;
+        background-color: rgb(0, 255, 13);
         color: white;
     }
     .sm-bg-green{
-        background-color:green;
+        background-color:rgb(58, 128, 0);
         color: white;
     }
     .sm-bg-yellow{
-        background-color: yellow;    
+        background-color: rgb(102, 255, 0);    
         color: black;
     }
     .title{
@@ -228,4 +350,5 @@ h1{
     .sm-bg-grey{
         background-color: grey;
     }
+}
 }
